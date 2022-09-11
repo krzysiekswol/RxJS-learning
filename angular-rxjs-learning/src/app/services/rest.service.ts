@@ -18,4 +18,8 @@ export class RestService {
    public getData(): Observable<Product> {
     return this.http.get<Product>(this.URL_SINGLE);
    }
+
+   public getLimitData(): Observable<Array<Product>> {
+    return this.http.get<Array<Product>>(this.URL_LIMIT);
+   }
 }
